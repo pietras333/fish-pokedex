@@ -1,0 +1,93 @@
+{
+    "Szczupak": {
+      "image": "/images/pike.png",
+      "greyImage": "/images/pike-grey.png",
+      "description": "Drapieżna ryba słodkowodna występująca w jeziorach i rzekach."
+    },
+    "Okoń": {
+      "image": "/images/perch.png",
+      "greyImage": "/images/perch-grey.png",
+      "description": "Pospolita ryba słodkowodna o charakterystycznych paskach."
+    },
+    "Karp": {
+      "image": "/images/carp.png",
+      "greyImage": "/images/carp-grey.png",
+      "description": "Duża ryba słodkowodna często spotykana w wolno płynących wodach."
+    },
+    "Pstrąg": {
+      "image": "/images/trout.png",
+      "greyImage": "/images/trout-grey.png",
+      "description": "Popularna ryba sportowa znana ze swojej zwinności i smaku."
+    },
+    "Sum": {
+      "image": "/images/catfish.png",
+      "greyImage": "/images/catfish-grey.png",
+      "description": "Ryba denna o charakterystycznych wąsach."
+    },
+    "Sandacz": {
+      "image": "/images/zander.png",
+      "greyImage": "/images/zander-grey.png",
+      "description": "Bliski krewny okonia, znany z ostrych zębów."
+    },
+    "Leszcz": {
+      "image": "/images/bream.png",
+      "greyImage": "/images/bream-grey.png",
+      "description": "Ryba spokojnego żeru występująca w jeziorach i rzekach."
+    },
+    "Węgorz": {
+      "image": "/images/eel.png",
+      "greyImage": "/images/eel-grey.png",
+      "description": "Wydłużona ryba o wężowym kształcie, aktywna nocą."
+    },
+    "Lin": {
+      "image": "/images/tench.png",
+      "greyImage": "/images/tench-grey.png",
+      "description": "Ryba o zielonkawym ubarwieniu i grubym śluzie na skórze."
+    },
+    "Jaź": {
+      "image": "/images/ide.png",
+      "greyImage": "/images/ide-grey.png",
+      "description": "Silna i ostrożna ryba często spotykana w rzekach."
+    },
+    "Kleń": {
+      "image": "/images/chub.png",
+      "greyImage": "/images/chub-grey.png",
+      "description": "Wytrzymała ryba rzeczna, często polująca na owady."
+    },
+    "Boleń": {
+      "image": "/images/asp.png",
+      "greyImage": "/images/asp-grey.png",
+      "description": "Drapieżna ryba rzeczna znana z szybkich ataków na ofiary."
+    },
+    "Płoć": {
+      "image": "/images/roach.png",
+      "greyImage": "/images/roach-grey.png",
+      "description": "Jedna z najczęściej spotykanych ryb słodkowodnych."
+    },
+    "Świnka": {
+      "image": "/images/nase.png",
+      "greyImage": "/images/nase-grey.png",
+      "description": "Ryba rzeczna preferująca szybkie prądy."
+    },
+    "Certa": {
+      "image": "/images/vimba.png",
+      "greyImage": "/images/vimba-grey.png",
+      "description": "Ryba wędrowna, często przemieszczająca się między rzekami a jeziorami."
+    },
+    "Troć wędrowna": {
+      "image": "/images/seatrout.png",
+      "greyImage": "/images/seatrout-grey.png",
+      "description": "Wędrowna odmiana pstrąga, znana z długich migracji."
+    },
+    "Lipień": {
+      "image": "/images/grayling.png",
+      "greyImage": "/images/grayling-grey.png",
+      "description": "Ryba górskich rzek o charakterystycznej dużej płetwie grzbietowej."
+    },
+    "Jesiotr": {
+      "image": "/images/sturgeon.png",
+      "greyImage": "/images/sturgeon-grey.png",
+      "description": "Długowieczna ryba o charakterystycznym wydłużonym pysku."
+    }
+  }
+  
