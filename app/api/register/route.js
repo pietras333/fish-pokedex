@@ -38,7 +38,7 @@ export async function POST(req) {
     }
 
     // Hash password
-    const hashedPassword = await bcrypt.hash(password, 10);
+    const hashedPassword = await bcrypt.hash(password, 5);
     console.log("Password hashed successfully");
 
     // Save user to database
