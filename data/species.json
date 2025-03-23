@@ -99,7 +99,7 @@
     "grayImage": "/images/grasscarp-gray.svg",
     "description": "Duża roślinożerna ryba słodkowodna."
   },
-  "Hucho": {
+  "Głowacica": {
     "image": "/images/huchen.svg",
     "grayImage": "/images/huchen-gray.svg",
     "description": "Rzadki gatunek łososiowatej ryby rzeczne."
@@ -115,9 +115,18 @@
     "description": "Wytrzymała ryba potrafiąca przetrwać w trudnych warunkach."
   },
   "Amur": {
-  "image": "/images/grasscarp.svg",
-  "grayImage": "/images/grasscarp-gray.svg",
-  "description": "Duża roślinożerna ryba, często wykorzystywana do kontroli roślinności wodnej."
-}
-
+    "image": "/images/grasscarp.svg",
+    "grayImage": "/images/grasscarp-gray.svg",
+    "description": "Duża roślinożerna ryba, często wykorzystywana do kontroli roślinności wodnej."
+  },
+  "Wzdręga": {
+    "image": "/images/rudd.svg",
+    "grayImage": "/images/rudd-gray.svg",
+    "description": "Pięknie ubarwiona ryba słodkowodna, często mylona z płocią."
+  },
+  "Jazgarz": {
+    "image": "/images/ruff.svg",
+    "grayImage": "/images/ruff-gray.svg",
+    "description": "Mała, drapieżna ryba o kolczastej płetwie grzbietowej, występująca w wodach słodkich i słonawych."
+  }
 }
