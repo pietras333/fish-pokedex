@@ -1,10 +1,9 @@
 import { NextResponse } from "next/server";
-import bcrypt from "bcryptjs";
+import bcryptjs from "bcryptjs";
 import clientPromise from "@/lib/mongodb";
 
 export async function POST(req) {
   try {
-    // Safely parse request body
     let body;
     try {
       body = await req.json();
@@ -16,8 +15,6 @@ export async function POST(req) {
     }
 
     const { username, password } = body;
-
-    // Validate input fields
     if (!username || !password) {
       return NextResponse.json(
         { error: "All fields are required!" },
@@ -25,19 +22,10 @@ export async function POST(req) {
       );
     }
 
-    // Connect to MongoDB
     const client = await clientPromise;
-    if (!client) {
-      return NextResponse.json(
-        { error: "Database connection error" },
-        { status: 500 }
-      );
-    }
-
     const db = client.db("fishPokedex");
     const usersCollection = db.collection("users");
 
-    // Find user in database (projection to exclude password for security)
     const user = await usersCollection.findOne(
       { username },
       { projection: { password: 1 } }
@@ -50,8 +38,7 @@ export async function POST(req) {
       );
     }
 
-    // Compare hashed password (only if user exists)
-    const passwordMatch = await bcrypt.compare(password, user.password);
+    const passwordMatch = await bcryptjs.compare(password, user.password);
     if (!passwordMatch) {
       return NextResponse.json(
         { error: "Invalid username or password" },
@@ -59,7 +46,6 @@ export async function POST(req) {
       );
     }
 
-    // Success response with user info (excluding sensitive data)
     return NextResponse.json(
       { message: "Login successful!", user: { username } },
       { status: 200 }
