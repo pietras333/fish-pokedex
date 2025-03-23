@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import speciesData from "@/data/species.json";
 import { AnimatePresence, motion } from "framer-motion";
 
-const FishPokedex = () => {
+const WebApp = () => {
   const { data: session, status } = useSession();
   const router = useRouter();
   const [fish, setFish] = useState([]);
@@ -307,4 +307,4 @@ const FishPokedex = () => {
   );
 };
 
-export default FishPokedex;
+export default WebApp;

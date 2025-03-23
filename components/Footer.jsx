@@ -7,7 +7,7 @@ const Footer = () => {
         <Link href="/login" className="hover:underline">
           Logowanie
         </Link>
-        <Link href="/pokeDex" className="hover:underline">
+        <Link href="/webapp" className="hover:underline">
           FishDex
         </Link>
         <Link href="/register" className="hover:underline">
