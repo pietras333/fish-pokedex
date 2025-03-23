@@ -116,6 +116,12 @@ const WebApp = () => {
     fish.filter((f) => f.user === session?.user?.username).map((f) => f.species)
   );
 
+  function getSpeciesCount(speciesName) {
+    return fish.filter(
+      (f) => f.user === session?.user?.username && f.species === speciesName
+    ).length;
+  }
+
   return (
     <div className="min-h-dvh flex flex-col">
       <Navbar />
@@ -276,6 +282,10 @@ const WebApp = () => {
                 }`}
               />
               <h3 className="text-lg font-semibold mb-2">🏆 Ranking połowów</h3>
+              <h2 className="text-base font-normal mb-2">
+                Złapano {getSpeciesCount(selectedFish)} przedstawicieli tego
+                gatunku.
+              </h2>
               {loadingCatches ? (
                 <p>Ładowanie...</p>
               ) : catches.length === 0 ? (

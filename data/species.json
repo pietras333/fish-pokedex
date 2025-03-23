@@ -94,11 +94,12 @@
     "grayImage": "/images/barbel-gray.svg",
     "description": "Ryba rzeczna często spotykana w szybko płynących wodach."
   },
-  "Tołpyga": {
-    "image": "/images/grasscarp.svg",
-    "grayImage": "/images/grasscarp-gray.svg",
-    "description": "Duża roślinożerna ryba słodkowodna."
+  "Krąp": {
+    "image": "/images/whitebream.svg",
+    "grayImage": "/images/whitebream-gray.svg",
+    "description": "Niewielka ryba karpiowata, często spotykana w jeziorach i rzekach, blisko spokrewniona z leszczem."
   },
+
   "Głowacica": {
     "image": "/images/huchen.svg",
     "grayImage": "/images/huchen-gray.svg",
