@@ -105,9 +105,9 @@
     "grayImage": "/images/huchen-gray.svg",
     "description": "Rzadki gatunek łososiowatej ryby rzeczne."
   },
-  "Różanka": {
-    "image": "/images/ruff.svg",
-    "grayImage": "/images/ruff-gray.svg",
+  "Miętus": {
+    "image": "/images/burbot.svg",
+    "grayImage": "/images/burbot-gray.svg",
     "description": "Mała ryba o ciekawej metodzie rozrodu."
   },
   "Karaś": {
