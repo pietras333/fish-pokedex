@@ -67,7 +67,6 @@ export async function GET(req) {
     );
   }
 }
-
 export const config = {
-  runtime: "edge",
+  runtime: "nodejs",
 };
