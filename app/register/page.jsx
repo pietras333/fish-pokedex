@@ -61,7 +61,7 @@ const Register = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          {["username", "password", "password"].map((field, index) => (
+          {["username", "password", "confirmPassword"].map((field, index) => (
             <motion.input
               key={field}
               type={field.includes("password") ? "password" : "text"}
