@@ -122,6 +122,11 @@ const WebApp = () => {
     ).length;
   }
 
+  function getSpeciesDescription(speciesName) {
+    const species = speciesData[speciesName];
+    return species ? species.description : "Brak opisu.";
+  }
+
   return (
     <div className="min-h-dvh flex flex-col">
       <Navbar />
@@ -281,6 +286,8 @@ const WebApp = () => {
                     : "opacity-25"
                 }`}
               />
+              <h4 className="w-full text-start text-lg">Opis</h4>
+              <p>{getSpeciesDescription(selectedFish)}</p>
               <h3 className="text-lg font-semibold mb-2">🏆 Ranking połowów</h3>
               <h2 className="text-base font-normal mb-2">
                 Złapano {getSpeciesCount(selectedFish)} przedstawicieli tego
