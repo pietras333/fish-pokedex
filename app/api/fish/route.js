@@ -55,7 +55,7 @@ export async function GET(req) {
       .collection("huntedFishes")
       .find(query)
       .sort({ date: -1 })
-      .limit(20)
+      .limit(50)
       .toArray();
 
     return NextResponse.json(catches, { status: 200 });
