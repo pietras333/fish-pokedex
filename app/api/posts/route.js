@@ -48,17 +48,21 @@ export async function GET(req) {
     const client = await clientPromise;
     const db = client.db("fishPokedex");
 
-    // Remove species filtering for fetching latest 50 posts
-    const query = {};
+    // Extract query parameters
+    const { searchParams } = new URL(req.url);
+    const species = searchParams.get("species");
 
-    const posts = await db
+    // Build the query
+    const query = species ? { species } : {};
+
+    const catches = await db
       .collection("huntedFishes")
-      .find(query) // No species filter
-      .sort({ postDate: -1 }) // Sort by most recent postDate
-      .limit(50) // Limit to 50 posts
+      .find(query)
+      .sort({ date: -1 })
+      .limit(50)
       .toArray();
 
-    return NextResponse.json(posts, { status: 200 });
+    return NextResponse.json(catches, { status: 200 });
   } catch (error) {
     console.error("Error:", error);
     return NextResponse.json(
@@ -67,3 +71,6 @@ export async function GET(req) {
     );
   }
 }
+export const config = {
+  runtime: "nodejs",
+};
