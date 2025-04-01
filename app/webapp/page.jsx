@@ -95,7 +95,13 @@ const WebApp = () => {
   }, [searchQuery]);
 
   useEffect(() => {
-    fetchPosts();
+    fetchPosts(); // Fetch once immediately
+
+    const interval = setInterval(() => {
+      fetchPosts();
+    }, 500); // Fetch every second
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
   }, []);
   return (
     <section className="bg-gray-100 h-dvh w-full flex max-xl:flex-col">
