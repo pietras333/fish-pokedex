@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="h-32 flex flex-col items-center justify-center text-gray-700 max-xl:pb-8">
+    <footer className="h-32 shadow-[inset_0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] flex flex-col items-center justify-center text-gray-700 max-xl:pb-8">
       <nav className="mb-2 flex space-x-6 max-xl:flex-col max-xl:text-center">
         <Link href="/login" className="hover:underline">
           Logowanie

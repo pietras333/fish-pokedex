@@ -23,6 +23,7 @@ export const metadata = {
       },
     ],
     locale: "pl_PL",
+    languages: "pl",
   },
 };
 

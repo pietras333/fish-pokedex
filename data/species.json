@@ -2,131 +2,209 @@
   "Szczupak": {
     "image": "/images/pike.svg",
     "grayImage": "/images/pike-gray.svg",
-    "description": "Drapieżna ryba słodkowodna występująca w jeziorach i rzekach."
+    "description": "A predatory freshwater fish found in lakes and rivers.",
+    "recordWeight": 25.5,
+    "recordLength": 140,
+    "evaluation": "length"
   },
   "Okoń": {
     "image": "/images/perch.svg",
     "grayImage": "/images/perch-gray.svg",
-    "description": "Pospolita ryba słodkowodna o charakterystycznych paskach."
+    "description": "A common freshwater fish with distinctive stripes.",
+    "recordWeight": 4.4,
+    "recordLength": 50,
+    "evaluation": "length"
   },
   "Karp": {
     "image": "/images/carp.svg",
     "grayImage": "/images/carp-gray.svg",
-    "description": "Duża ryba słodkowodna często spotykana w wolno płynących wodach."
+    "description": "A large freshwater fish commonly found in slow-flowing waters.",
+    "recordWeight": 38.5,
+    "recordLength": 112,
+    "evaluation": "weight"
   },
   "Pstrąg": {
     "image": "/images/trout.svg",
     "grayImage": "/images/trout-gray.svg",
-    "description": "Popularna ryba sportowa znana ze swojej zwinności i smaku."
+    "description": "A popular sport fish known for its agility and taste.",
+    "recordWeight": 18.6,
+    "recordLength": 128,
+    "evaluation": "length"
   },
   "Sum": {
     "image": "/images/catfish.svg",
     "grayImage": "/images/catfish-gray.svg",
-    "description": "Ryba denna o charakterystycznych wąsach."
+    "description": "A bottom-dwelling fish with distinctive whiskers.",
+    "recordWeight": 65.7,
+    "recordLength": 274,
+    "evaluation": "weight"
   },
   "Sandacz": {
     "image": "/images/zander.svg",
     "grayImage": "/images/zander-gray.svg",
-    "description": "Bliski krewny okonia, znany z ostrych zębów."
+    "description": "A close relative of the perch, known for its sharp teeth.",
+    "recordWeight": 16.3,
+    "recordLength": 112,
+    "evaluation": "length"
   },
   "Leszcz": {
     "image": "/images/bream.svg",
     "grayImage": "/images/bream-gray.svg",
-    "description": "Ryba spokojnego żeru występująca w jeziorach i rzekach."
+    "description": "A peaceful feeder fish found in lakes and rivers.",
+    "recordWeight": 7.8,
+    "recordLength": 76,
+    "evaluation": "weight"
   },
   "Węgorz": {
     "image": "/images/eel.svg",
     "grayImage": "/images/eel-gray.svg",
-    "description": "Wydłużona ryba o wężowym kształcie, aktywna nocą."
+    "description": "An elongated fish with a snake-like shape, active at night.",
+    "recordWeight": 7.2,
+    "recordLength": 130,
+    "evaluation": "length"
   },
   "Lin": {
     "image": "/images/tench.svg",
     "grayImage": "/images/tench-gray.svg",
-    "description": "Ryba o zielonkawym ubarwieniu i grubym śluzie na skórze."
+    "description": "A fish with a greenish color and thick slime on its skin.",
+    "recordWeight": 7.5,
+    "recordLength": 75,
+    "evaluation": "weight"
   },
   "Jaź": {
     "image": "/images/weir.svg",
     "grayImage": "/images/weir-gray.svg",
-    "description": "Silna i ostrożna ryba często spotykana w rzekach."
+    "description": "A strong and cautious fish often found in rivers.",
+    "recordWeight": 6.5,
+    "recordLength": 85,
+    "evaluation": "weight"
   },
   "Kleń": {
     "image": "/images/chub.svg",
     "grayImage": "/images/chub-gray.svg",
-    "description": "Wytrzymała ryba rzeczna, często polująca na owady."
+    "description": "A resilient river fish often hunting insects.",
+    "recordWeight": 10.5,
+    "recordLength": 75,
+    "evaluation": "weight"
   },
   "Boleń": {
     "image": "/images/aspius.svg",
     "grayImage": "/images/aspius-gray.svg",
-    "description": "Drapieżna ryba rzeczna znana z szybkich ataków na ofiary."
+    "description": "A predatory river fish known for its rapid attacks on prey.",
+    "recordWeight": 15.0,
+    "recordLength": 96,
+    "evaluation": "length"
   },
   "Płoć": {
     "image": "/images/roach.svg",
     "grayImage": "/images/roach-gray.svg",
-    "description": "Jedna z najczęściej spotykanych ryb słodkowodnych."
+    "description": "One of the most commonly found freshwater fish.",
+    "recordWeight": 2.0,
+    "recordLength": 45,
+    "evaluation": "length"
   },
   "Świnka": {
     "image": "/images/nase.svg",
     "grayImage": "/images/nase-gray.svg",
-    "description": "Ryba rzeczna preferująca szybkie prądy."
+    "description": "A river fish that prefers fast currents.",
+    "recordWeight": 2.7,
+    "recordLength": 50,
+    "evaluation": "length"
   },
   "Certa": {
     "image": "/images/vimba.svg",
     "grayImage": "/images/vimba-gray.svg",
-    "description": "Ryba wędrowna, często przemieszczająca się między rzekami a jeziorami."
+    "description": "A migratory fish often moving between rivers and lakes.",
+    "recordWeight": 3.0,
+    "recordLength": 70,
+    "evaluation": "length"
   },
   "Troć wędrowna": {
     "image": "/images/seatrout.svg",
     "grayImage": "/images/seatrout-gray.svg",
-    "description": "Wędrowna odmiana pstrąga, znana z długich migracji."
+    "description": "A migratory variety of trout, known for long migrations.",
+    "recordWeight": 17.2,
+    "recordLength": 127,
+    "evaluation": "length"
   },
   "Lipień": {
     "image": "/images/grayling.svg",
     "grayImage": "/images/grayling-gray.svg",
-    "description": "Ryba górskich rzek o charakterystycznej dużej płetwie grzbietowej."
+    "description": "A fish of mountain rivers with a large dorsal fin.",
+    "recordWeight": 3.0,
+    "recordLength": 70,
+    "evaluation": "length"
   },
   "Jesiotr": {
     "image": "/images/sturgeon.svg",
     "grayImage": "/images/sturgeon-gray.svg",
-    "description": "Długowieczna ryba o charakterystycznym wydłużonym pysku."
+    "description": "A long-lived fish with a characteristic extended snout.",
+    "recordWeight": 250.0,
+    "recordLength": 450,
+    "evaluation": "weight"
   },
   "Brzana": {
     "image": "/images/barbel.svg",
     "grayImage": "/images/barbel-gray.svg",
-    "description": "Ryba rzeczna często spotykana w szybko płynących wodach."
+    "description": "A river fish commonly found in fast-flowing waters.",
+    "recordWeight": 16.0,
+    "recordLength": 97,
+    "evaluation": "length"
   },
   "Krąp": {
     "image": "/images/whitebream.svg",
     "grayImage": "/images/whitebream-gray.svg",
-    "description": "Niewielka ryba karpiowata, często spotykana w jeziorach i rzekach, blisko spokrewniona z leszczem."
+    "description": "A small carp fish often found in lakes and rivers, closely related to the bream.",
+    "recordWeight": 2.3,
+    "recordLength": 40,
+    "evaluation": "length"
   },
   "Głowacica": {
     "image": "/images/huchen.svg",
     "grayImage": "/images/huchen-gray.svg",
-    "description": "Rzadki gatunek łososiowatej ryby rzeczne."
+    "description": "A rare salmonid fish found in rivers.",
+    "recordWeight": 19.2,
+    "recordLength": 115,
+    "evaluation": "length"
   },
   "Miętus": {
     "image": "/images/burbot.svg",
     "grayImage": "/images/burbot-gray.svg",
-    "description": "Mała ryba o ciekawej metodzie rozrodu."
+    "description": "A small fish with a unique breeding method.",
+    "recordWeight": 5.0,
+    "recordLength": 80,
+    "evaluation": "length"
   },
   "Karaś": {
     "image": "/images/crucian.svg",
     "grayImage": "/images/crucian-gray.svg",
-    "description": "Wytrzymała ryba potrafiąca przetrwać w trudnych warunkach."
+    "description": "A resilient fish capable of surviving in difficult conditions.",
+    "recordWeight": 3.0,
+    "recordLength": 50,
+    "evaluation": "weight"
   },
   "Amur": {
     "image": "/images/grasscarp.svg",
     "grayImage": "/images/grasscarp-gray.svg",
-    "description": "Duża roślinożerna ryba, często wykorzystywana do kontroli roślinności wodnej."
+    "description": "A large herbivorous fish, often used to control aquatic vegetation.",
+    "recordWeight": 38.0,
+    "recordLength": 160,
+    "evaluation": "weight"
   },
   "Wzdręga": {
     "image": "/images/rudd.svg",
     "grayImage": "/images/rudd-gray.svg",
-    "description": "Pięknie ubarwiona ryba słodkowodna, często mylona z płocią."
+    "description": "A beautifully colored freshwater fish, often mistaken for a roach.",
+    "recordWeight": 1.6,
+    "recordLength": 35,
+    "evaluation": "length"
   },
   "Jazgarz": {
     "image": "/images/ruff.svg",
     "grayImage": "/images/ruff-gray.svg",
-    "description": "Mała, drapieżna ryba o kolczastej płetwie grzbietowej, występująca w wodach słodkich i słonawych."
+    "description": "A small predatory fish with a spiny dorsal fin, found in freshwater and brackish waters.",
+    "recordWeight": 1.0,
+    "recordLength": 25,
+    "evaluation": "length"
   }
 }

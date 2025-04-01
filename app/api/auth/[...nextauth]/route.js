@@ -5,7 +5,7 @@ import clientPromise from "@/lib/mongodb";
 
 export const authOptions = {
   session: {
-    strategy: "jwt", // Use JWT for session storage
+    strategy: "jwt",
   },
   providers: [
     CredentialsProvider({
@@ -19,7 +19,7 @@ export const authOptions = {
         const db = client.db("fishPokedex");
         const usersCollection = db.collection("users");
 
-        // Find user by username
+        // Find user
         const user = await usersCollection.findOne({
           username: credentials.username,
         });
@@ -32,11 +32,17 @@ export const authOptions = {
         );
         if (!isValid) throw new Error("Invalid username or password");
 
+        // Mark user as online
+        await usersCollection.updateOne(
+          { _id: user._id },
+          { $set: { isOnline: true, lastSeen: new Date() } }
+        );
+
         return { id: user._id, username: user.username };
       },
     }),
   ],
-  secret: process.env.NEXTAUTH_SECRET, // Store in .env.local
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async session({ session, token }) {
       session.user = token.user;
@@ -47,11 +53,22 @@ export const authOptions = {
       return token;
     },
   },
+  // ✅ Detect when user logs out and update MongoDB
+  events: {
+    async signOut({ token }) {
+      const client = await clientPromise;
+      const db = client.db("fishPokedex");
+      const usersCollection = db.collection("users");
+
+      if (token?.user?.username) {
+        await usersCollection.updateOne(
+          { username: token.user.username },
+          { $set: { isOnline: false, lastSeen: new Date() } }
+        );
+      }
+    },
+  },
 };
 
 const handler = NextAuth(authOptions);
 export { handler as GET, handler as POST };
-
-export const config = {
-  runtime: "nodejs",
-};
