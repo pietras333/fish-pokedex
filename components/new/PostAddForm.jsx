@@ -85,6 +85,7 @@ const PostAddForm = ({ setElementVisibility, session, setFish, fish }) => {
             name="content"
             value={postContent.content}
             onChange={handleChange}
+            required
             placeholder="Treść wiadomości"
             className="w-full p-2 py-4 rounded-xl border border-gray-200 text-lg"
           />
@@ -95,6 +96,7 @@ const PostAddForm = ({ setElementVisibility, session, setFish, fish }) => {
             name="species"
             value={postContent.species}
             onChange={handleChange}
+            required
             className="text-lg p-4 hover:cursor-pointer border border-gray-200 rounded-xl"
           >
             <option value="">Wybierz gatunek</option>
@@ -112,6 +114,7 @@ const PostAddForm = ({ setElementVisibility, session, setFish, fish }) => {
             name="weight"
             value={postContent.weight}
             onChange={handleChange}
+            required
             placeholder="Np. 10kg"
             className="w-full p-2 py-4 rounded-xl border border-gray-200 text-lg"
           />
@@ -123,6 +126,7 @@ const PostAddForm = ({ setElementVisibility, session, setFish, fish }) => {
             name="length"
             value={postContent.length}
             onChange={handleChange}
+            required
             placeholder="Np. 100cm"
             className="w-full p-2 py-4 rounded-xl border border-gray-200 text-lg"
           />
@@ -132,6 +136,7 @@ const PostAddForm = ({ setElementVisibility, session, setFish, fish }) => {
           <input
             type="date"
             name="catchDate"
+            required
             value={postContent.catchDate}
             onChange={handleChange}
             className="w-fit hover:cursor-pointer p-2 py-4 rounded-xl border border-gray-200 text-lg"
