@@ -9,7 +9,7 @@ export async function POST(req) {
     if (!session)
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
-    const { species, weight, length, catchDate } = await req.json();
+    const { species, weight, length, catchDate, content } = await req.json();
     if (!species)
       return NextResponse.json(
         { error: "Species is required" },
@@ -26,6 +26,7 @@ export async function POST(req) {
       weight,
       length,
       catchDate,
+      content,
       postDate: new Date().toISOString(),
       likes: 0,
       comments: [],
@@ -58,7 +59,7 @@ export async function GET(req) {
     const catches = await db
       .collection("huntedFishes")
       .find(query)
-      .sort({ date: -1 })
+      .sort({ catchDate: -1, postDate: -1, date: -1 })
       .limit(50)
       .toArray();
 

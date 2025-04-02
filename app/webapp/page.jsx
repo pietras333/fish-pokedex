@@ -178,6 +178,14 @@ const WebApp = () => {
             >
               <FaSearch className="text-2xl" />
             </button>
+            <button
+              onClick={() => {
+                setShowAddPostForm((prev) => !prev);
+              }}
+              className="hover:cursor-pointer text-gray-400 hover:text-gray-600 transition-all duration-300"
+            >
+              <FaFish className="text-2xl" />
+            </button>
           </section>
           <AnimatePresence>
             {queryError && <p className="text-red-500 mt-4">{queryError}</p>}
@@ -232,7 +240,7 @@ const WebApp = () => {
       </section>
       {/* END Posts */}
 
-      <section className="w-128 max-xl:hidden max-xl:w-full max-xl:h-fit border-l border-gray-200 p-4 overflow-y-auto">
+      {/* <section className="w-128 max-xl:hidden max-xl:w-full max-xl:h-fit border-l border-gray-200 p-4 overflow-y-auto">
         <section className="w-full h-fit flex flex-col items-center gap-y-4 p-4 bg-white rounded-xl">
           <section className="w-fit h-full flex items-center gap-x-4">
             <FaMedal className="text-2xl text-yellow-600" />
@@ -309,7 +317,7 @@ const WebApp = () => {
             </ul>
           </section>
         </section>
-      </section>
+      </section> */}
       <section className="w-128 max-xl:hidden max-xl:w-full h-full max-xl:shadow-[inset_0_-2px_4px_rgba(0,0,0,0.6)] bg-white border-l border-gray-200">
         <ul className="flex flex-col h-fit w-full overflow-y-auto">
           <li className="w-full h-fit p-4 flex items-center gap-x-4">

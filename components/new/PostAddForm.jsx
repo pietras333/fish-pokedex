@@ -10,7 +10,7 @@ const PostAddForm = ({ setElementVisibility, session, setFish, fish }) => {
     weight: "",
     length: "",
     catchDate: "",
-    user: session?.user?.username,
+    user: session?.user?.username || "",
     content: "",
   });
 
@@ -50,7 +50,14 @@ const PostAddForm = ({ setElementVisibility, session, setFish, fish }) => {
       }
 
       setMessage("Ryba dodana pomyślnie!");
-      setPostContent({ species: "", weight: "", length: "", catchDate: "" });
+      setPostContent({
+        species: "",
+        weight: "",
+        length: "",
+        catchDate: "",
+        user: session?.user?.username || "",
+        content: "",
+      });
       setElementVisibility(false);
     } catch (error) {
       console.error("Błąd:", error);
